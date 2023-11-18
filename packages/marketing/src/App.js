@@ -7,14 +7,14 @@ import {
 import Landing from "./components/Landing";
 import Pricing from "./components/Pricing";
 
-const createGenerateClassName = createGenerateClassName({
+const generateClassName = createGenerateClassName({
   productionPrefix: "ma",
 });
 
 export default () => {
   return (
     <div>
-      <StylesProvider createGenerateClassName={createGenerateClassName}>
+      <StylesProvider generateClassName={generateClassName}>
         <BrowserRouter>
           <Switch>
             <Route exact path="/pricing" component={Pricing} />
